@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600;900&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+    
+
+:root{
+    
+    --white: #FFF;
+    --black: #000;
+    --beige:#F5F5DD;
+    --dirty-white: #ECE7CA;
+    --dutch-white: #E3D8B7;
+    --dark-vanilla: #DACAA4;
+    --tan: #D1BB91;
+    --light-french-beige: #C8AD7E;
+    --dark-gray: #3A3B3C;
+    --dark-brown: #362204;
+
+}
+
+body{
+    height:100vh;
+    background-image: linear-gradient(to bottom right, var(--beige), var(--dark-vanilla));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+
+.navigation{
+    
+    justify-self: start;
+    width: 85vw;
+    height:auto;
+    margin-top:10rem;
+    /* background-color: white; */
+    
+    
+}
+
+.navigation_list{
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding:1rem;
+}
+
+.navigation_item a{
+    text-decoration:none;
+    font-family:"Nunito Sans", "sans-serif";
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--tan);
+}
+
+.navigation_item a:hover{
+    color: var(--dark-brown);
+
+}
+
+
+.centerpiece{
+
+    margin-top:8rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    height:45rem;
+    width: 140rem;
+    background-color: var(--white);
+    padding:5rem;
+    
+} 
+.centerpiece_photo
+{
+    background-color: var(--light-french-beige); 
+    height: 40rem;
+    width:50rem;
+}
+
+.centerpiece_photo img{
+    height: 40rem;
+    width:50rem;
+    object-fit: cover; 
+    opacity:0.9;
+    
+}
+
+
+.centerpiece_intro{
+    font-family: "Nunito Sans", "sans-serif";
+    font-weight:900;
+    font-size: 2rem;
+    color: var(--dark-brown);
+    margin-left:8rem;
+}
+
+.centerpiece_intro_cy{
+    color: var(--light-french-beige);
+    
+}
+.centerpiece_intro_fedev{
+    color: var(--tan);
+    
+}
+.centerpiece_intro_cy:hover{
+    color:yellowgreen;
+}
+.centerpiece_intro_fedev:hover{
+    color:yellowgreen;
+}
+
+.feedback
+{
+    margin-top: 8rem;
+}
+.feedback_heading
+{
+    font-family:"Roboto","sans-serif";
+    color:white;
+
+}
+.feedback_heading span{
+    color:var(--dark-gray);
+}
